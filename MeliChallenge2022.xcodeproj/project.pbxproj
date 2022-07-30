@@ -24,6 +24,7 @@
 		E754F888289441CC00D1653D /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F887289441CC00D1653D /* ProductService.swift */; };
 		E754F88B2894460100D1653D /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F88A2894460100D1653D /* UITableViewExtensions.swift */; };
 		E754F88D2894AFE300D1653D /* MainResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F88C2894AFE300D1653D /* MainResponseModel.swift */; };
+		E79743D32895BEC300F5D00E /* MeliChallenge2022ProductTableViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79743D22895BEC300F5D00E /* MeliChallenge2022ProductTableViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		E754F887289441CC00D1653D /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		E754F88A2894460100D1653D /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		E754F88C2894AFE300D1653D /* MainResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainResponseModel.swift; sourceTree = "<group>"; };
+		E79743D22895BEC300F5D00E /* MeliChallenge2022ProductTableViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliChallenge2022ProductTableViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				E754F86628943A9E00D1653D /* MeliChallenge2022UITests.swift */,
 				E754F86828943A9E00D1653D /* MeliChallenge2022UITestsLaunchTests.swift */,
+				E79743D22895BEC300F5D00E /* MeliChallenge2022ProductTableViewTest.swift */,
 			);
 			path = MeliChallenge2022UITests;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			files = (
 				E754F86728943A9E00D1653D /* MeliChallenge2022UITests.swift in Sources */,
 				E754F86928943A9E00D1653D /* MeliChallenge2022UITestsLaunchTests.swift in Sources */,
+				E79743D32895BEC300F5D00E /* MeliChallenge2022ProductTableViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,8 +522,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -545,8 +548,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
