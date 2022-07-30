@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E754F84628943A9D00D1653D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F84528943A9D00D1653D /* AppDelegate.swift */; };
+		E754F84828943A9D00D1653D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F84728943A9D00D1653D /* SceneDelegate.swift */; };
+		E754F84D28943A9D00D1653D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E754F84B28943A9D00D1653D /* Main.storyboard */; };
+		E754F84F28943A9D00D1653D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E754F84E28943A9D00D1653D /* Assets.xcassets */; };
+		E754F85228943A9D00D1653D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E754F85028943A9D00D1653D /* LaunchScreen.storyboard */; };
+		E754F85D28943A9E00D1653D /* MeliChallenge2022Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F85C28943A9E00D1653D /* MeliChallenge2022Tests.swift */; };
+		E754F86728943A9E00D1653D /* MeliChallenge2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F86628943A9E00D1653D /* MeliChallenge2022UITests.swift */; };
+		E754F86928943A9E00D1653D /* MeliChallenge2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F86828943A9E00D1653D /* MeliChallenge2022UITestsLaunchTests.swift */; };
+		E754F87B28943F7500D1653D /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F87A28943F7500D1653D /* ProductTableViewCell.swift */; };
+		E754F87D28943F8600D1653D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F87C28943F8600D1653D /* DetailViewController.swift */; };
+		E754F87F28943F9B00D1653D /* ProductSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F87E28943F9B00D1653D /* ProductSearchTableViewController.swift */; };
+		E754F8822894402A00D1653D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E754F8812894402A00D1653D /* SDWebImage */; };
+		E754F8842894405200D1653D /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F8832894405200D1653D /* ProductModel.swift */; };
+		E754F8862894419600D1653D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E754F8852894419600D1653D /* Localizable.strings */; };
+		E754F888289441CC00D1653D /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F887289441CC00D1653D /* ProductService.swift */; };
+		E754F88B2894460100D1653D /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F88A2894460100D1653D /* UITableViewExtensions.swift */; };
+		E754F88D2894AFE300D1653D /* MainResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754F88C2894AFE300D1653D /* MainResponseModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E754F85928943A9E00D1653D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E754F83A28943A9D00D1653D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E754F84128943A9D00D1653D;
+			remoteInfo = MeliChallenge2022;
+		};
+		E754F86328943A9E00D1653D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E754F83A28943A9D00D1653D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E754F84128943A9D00D1653D;
+			remoteInfo = MeliChallenge2022;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E754F84228943A9D00D1653D /* MeliChallenge2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeliChallenge2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E754F84528943A9D00D1653D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E754F84728943A9D00D1653D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E754F84C28943A9D00D1653D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E754F84E28943A9D00D1653D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E754F85128943A9D00D1653D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E754F85328943A9D00D1653D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E754F85828943A9E00D1653D /* MeliChallenge2022Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeliChallenge2022Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E754F85C28943A9E00D1653D /* MeliChallenge2022Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliChallenge2022Tests.swift; sourceTree = "<group>"; };
+		E754F86228943A9E00D1653D /* MeliChallenge2022UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeliChallenge2022UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E754F86628943A9E00D1653D /* MeliChallenge2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliChallenge2022UITests.swift; sourceTree = "<group>"; };
+		E754F86828943A9E00D1653D /* MeliChallenge2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliChallenge2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E754F87A28943F7500D1653D /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		E754F87C28943F8600D1653D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E754F87E28943F9B00D1653D /* ProductSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSearchTableViewController.swift; sourceTree = "<group>"; };
+		E754F8832894405200D1653D /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		E754F8852894419600D1653D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E754F887289441CC00D1653D /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		E754F88A2894460100D1653D /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		E754F88C2894AFE300D1653D /* MainResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainResponseModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E754F83F28943A9D00D1653D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E754F8822894402A00D1653D /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E754F85528943A9E00D1653D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E754F85F28943A9E00D1653D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E754F83928943A9D00D1653D = {
+			isa = PBXGroup;
+			children = (
+				E754F84428943A9D00D1653D /* MeliChallenge2022 */,
+				E754F85B28943A9E00D1653D /* MeliChallenge2022Tests */,
+				E754F86528943A9E00D1653D /* MeliChallenge2022UITests */,
+				E754F84328943A9D00D1653D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E754F84328943A9D00D1653D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E754F84228943A9D00D1653D /* MeliChallenge2022.app */,
+				E754F85828943A9E00D1653D /* MeliChallenge2022Tests.xctest */,
+				E754F86228943A9E00D1653D /* MeliChallenge2022UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E754F84428943A9D00D1653D /* MeliChallenge2022 */ = {
+			isa = PBXGroup;
+			children = (
+				E754F87528943E6F00D1653D /* Views */,
+				E754F87628943E7C00D1653D /* Models */,
+				E754F87828943E9000D1653D /* Network */,
+				E754F87928943E9C00D1653D /* Resources */,
+				E754F889289445EE00D1653D /* Extensions */,
+				E754F84528943A9D00D1653D /* AppDelegate.swift */,
+				E754F84728943A9D00D1653D /* SceneDelegate.swift */,
+				E754F84B28943A9D00D1653D /* Main.storyboard */,
+				E754F84E28943A9D00D1653D /* Assets.xcassets */,
+				E754F85028943A9D00D1653D /* LaunchScreen.storyboard */,
+				E754F85328943A9D00D1653D /* Info.plist */,
+			);
+			path = MeliChallenge2022;
+			sourceTree = "<group>";
+		};
+		E754F85B28943A9E00D1653D /* MeliChallenge2022Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E754F85C28943A9E00D1653D /* MeliChallenge2022Tests.swift */,
+			);
+			path = MeliChallenge2022Tests;
+			sourceTree = "<group>";
+		};
+		E754F86528943A9E00D1653D /* MeliChallenge2022UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E754F86628943A9E00D1653D /* MeliChallenge2022UITests.swift */,
+				E754F86828943A9E00D1653D /* MeliChallenge2022UITestsLaunchTests.swift */,
+			);
+			path = MeliChallenge2022UITests;
+			sourceTree = "<group>";
+		};
+		E754F87528943E6F00D1653D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E754F87A28943F7500D1653D /* ProductTableViewCell.swift */,
+				E754F87C28943F8600D1653D /* DetailViewController.swift */,
+				E754F87E28943F9B00D1653D /* ProductSearchTableViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E754F87628943E7C00D1653D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E754F8832894405200D1653D /* ProductModel.swift */,
+				E754F88C2894AFE300D1653D /* MainResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E754F87828943E9000D1653D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E754F887289441CC00D1653D /* ProductService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E754F87928943E9C00D1653D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E754F8852894419600D1653D /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E754F889289445EE00D1653D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E754F88A2894460100D1653D /* UITableViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E754F84128943A9D00D1653D /* MeliChallenge2022 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E754F86C28943A9E00D1653D /* Build configuration list for PBXNativeTarget "MeliChallenge2022" */;
+			buildPhases = (
+				E754F83E28943A9D00D1653D /* Sources */,
+				E754F83F28943A9D00D1653D /* Frameworks */,
+				E754F84028943A9D00D1653D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeliChallenge2022;
+			packageProductDependencies = (
+				E754F8812894402A00D1653D /* SDWebImage */,
+			);
+			productName = MeliChallenge2022;
+			productReference = E754F84228943A9D00D1653D /* MeliChallenge2022.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E754F85728943A9E00D1653D /* MeliChallenge2022Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E754F86F28943A9E00D1653D /* Build configuration list for PBXNativeTarget "MeliChallenge2022Tests" */;
+			buildPhases = (
+				E754F85428943A9E00D1653D /* Sources */,
+				E754F85528943A9E00D1653D /* Frameworks */,
+				E754F85628943A9E00D1653D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E754F85A28943A9E00D1653D /* PBXTargetDependency */,
+			);
+			name = MeliChallenge2022Tests;
+			productName = MeliChallenge2022Tests;
+			productReference = E754F85828943A9E00D1653D /* MeliChallenge2022Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E754F86128943A9E00D1653D /* MeliChallenge2022UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E754F87228943A9E00D1653D /* Build configuration list for PBXNativeTarget "MeliChallenge2022UITests" */;
+			buildPhases = (
+				E754F85E28943A9E00D1653D /* Sources */,
+				E754F85F28943A9E00D1653D /* Frameworks */,
+				E754F86028943A9E00D1653D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E754F86428943A9E00D1653D /* PBXTargetDependency */,
+			);
+			name = MeliChallenge2022UITests;
+			productName = MeliChallenge2022UITests;
+			productReference = E754F86228943A9E00D1653D /* MeliChallenge2022UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E754F83A28943A9D00D1653D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E754F84128943A9D00D1653D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E754F85728943A9E00D1653D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E754F84128943A9D00D1653D;
+					};
+					E754F86128943A9E00D1653D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E754F84128943A9D00D1653D;
+					};
+				};
+			};
+			buildConfigurationList = E754F83D28943A9D00D1653D /* Build configuration list for PBXProject "MeliChallenge2022" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E754F83928943A9D00D1653D;
+			packageReferences = (
+				E754F8802894402A00D1653D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = E754F84328943A9D00D1653D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E754F84128943A9D00D1653D /* MeliChallenge2022 */,
+				E754F85728943A9E00D1653D /* MeliChallenge2022Tests */,
+				E754F86128943A9E00D1653D /* MeliChallenge2022UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E754F84028943A9D00D1653D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E754F85228943A9D00D1653D /* LaunchScreen.storyboard in Resources */,
+				E754F8862894419600D1653D /* Localizable.strings in Resources */,
+				E754F84F28943A9D00D1653D /* Assets.xcassets in Resources */,
+				E754F84D28943A9D00D1653D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E754F85628943A9E00D1653D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E754F86028943A9E00D1653D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E754F83E28943A9D00D1653D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E754F84628943A9D00D1653D /* AppDelegate.swift in Sources */,
+				E754F8842894405200D1653D /* ProductModel.swift in Sources */,
+				E754F87F28943F9B00D1653D /* ProductSearchTableViewController.swift in Sources */,
+				E754F84828943A9D00D1653D /* SceneDelegate.swift in Sources */,
+				E754F88D2894AFE300D1653D /* MainResponseModel.swift in Sources */,
+				E754F87B28943F7500D1653D /* ProductTableViewCell.swift in Sources */,
+				E754F888289441CC00D1653D /* ProductService.swift in Sources */,
+				E754F87D28943F8600D1653D /* DetailViewController.swift in Sources */,
+				E754F88B2894460100D1653D /* UITableViewExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E754F85428943A9E00D1653D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E754F85D28943A9E00D1653D /* MeliChallenge2022Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E754F85E28943A9E00D1653D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E754F86728943A9E00D1653D /* MeliChallenge2022UITests.swift in Sources */,
+				E754F86928943A9E00D1653D /* MeliChallenge2022UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E754F85A28943A9E00D1653D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E754F84128943A9D00D1653D /* MeliChallenge2022 */;
+			targetProxy = E754F85928943A9E00D1653D /* PBXContainerItemProxy */;
+		};
+		E754F86428943A9E00D1653D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E754F84128943A9D00D1653D /* MeliChallenge2022 */;
+			targetProxy = E754F86328943A9E00D1653D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E754F84B28943A9D00D1653D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E754F84C28943A9D00D1653D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E754F85028943A9D00D1653D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E754F85128943A9D00D1653D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E754F86A28943A9E00D1653D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E754F86B28943A9E00D1653D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E754F86D28943A9E00D1653D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeliChallenge2022/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = santiagobalestero.MeliChallenge2022;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E754F86E28943A9E00D1653D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeliChallenge2022/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = santiagobalestero.MeliChallenge2022;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E754F87028943A9E00D1653D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = santiagobalestero.MeliChallenge2022Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeliChallenge2022.app/MeliChallenge2022";
+			};
+			name = Debug;
+		};
+		E754F87128943A9E00D1653D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = santiagobalestero.MeliChallenge2022Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeliChallenge2022.app/MeliChallenge2022";
+			};
+			name = Release;
+		};
+		E754F87328943A9E00D1653D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = santiagobalestero.MeliChallenge2022UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeliChallenge2022;
+			};
+			name = Debug;
+		};
+		E754F87428943A9E00D1653D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = santiagobalestero.MeliChallenge2022UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeliChallenge2022;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E754F83D28943A9D00D1653D /* Build configuration list for PBXProject "MeliChallenge2022" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E754F86A28943A9E00D1653D /* Debug */,
+				E754F86B28943A9E00D1653D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E754F86C28943A9E00D1653D /* Build configuration list for PBXNativeTarget "MeliChallenge2022" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E754F86D28943A9E00D1653D /* Debug */,
+				E754F86E28943A9E00D1653D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E754F86F28943A9E00D1653D /* Build configuration list for PBXNativeTarget "MeliChallenge2022Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E754F87028943A9E00D1653D /* Debug */,
+				E754F87128943A9E00D1653D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E754F87228943A9E00D1653D /* Build configuration list for PBXNativeTarget "MeliChallenge2022UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E754F87328943A9E00D1653D /* Debug */,
+				E754F87428943A9E00D1653D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E754F8802894402A00D1653D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E754F8812894402A00D1653D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E754F8802894402A00D1653D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E754F83A28943A9D00D1653D /* Project object */;
+}

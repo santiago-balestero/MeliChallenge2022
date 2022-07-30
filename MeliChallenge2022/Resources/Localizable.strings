@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  MeliChallenge2022
+
+  Created by Santiago Balestero on 29/7/22.
+  
+*/
+
+//SERVICES
+
+"baseUrl" = "api.mercadolibre.com";
+"productSearchEndpoint" = "/sites/MLU/search";
+
+//PRODUCT LIST VIEWCONTROLLER
+
+"searchBarPlaceholder" = "Busca en Mercado Libre";
+"connectionErrorText" = "Error de conexión, vuelva a intentarlo";
+"emptyResults" = "No se encontraron resultados";
+
+"errorAlertsTitle" = "Error";
