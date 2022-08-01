@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
     
     private func refresh() {
         loadViewIfNeeded()
-        titleLabel.text = product?.title
+        titleLabel.text = formattedTitle()
         priceLabel.text = "\(product?.currency ?? "") \(product?.price ?? 0.0)"
         quantityLabel.text = product?.quantity ?? 0 > 1 ? "\(product?.quantity ?? 0) disponibles"
         : "\(product?.quantity ?? 0) disponible"
@@ -30,6 +30,10 @@ class DetailViewController: UIViewController {
         imageView.sd_setImage(with: URL(string: product?.image ?? ""), placeholderImage: UIImage(named: "placeholder"))
     }
     
+    private func formattedTitle() -> String {
+        return product?.title.components(separatedBy: "|")[0] ?? ""
+//        return title?[0] ?? ""
+    }
         @IBAction func onViewOnWebButtonTouchUpInside(_ sender: Any) {
         if let link = URL(string: product?.permalink ?? "") {
           UIApplication.shared.open(link)

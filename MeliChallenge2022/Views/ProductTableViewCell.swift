@@ -24,7 +24,7 @@ class ProductTableViewCell: UITableViewCell {
     private func refresh() {
         titleLabel.text = product?.title
         priceLabel.text = "\(product?.currency ?? "") \(product?.price ?? 0.0)"
-        conditionLabel.text = product?.condition.capitalized
+        conditionLabel.text = product?.condition == "used" ? "Usado" : "Nuevo"
         thumbnailImageView.sd_imageIndicator = SDWebImageActivityIndicator.medium
         thumbnailImageView.sd_setImage(with: URL(string: product?.image ?? ""), placeholderImage: UIImage(named: "placeholder"))
 
