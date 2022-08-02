@@ -28,6 +28,16 @@ struct ProductModel: Codable {
         self.condition = try container.decode(String.self, forKey: .condition)
     }
     
+    init(title: String, price: Float, currency: String, image: String, permalink: String, quantity: Int, condition: String) {
+        self.title = title
+        self.price = price
+        self.currency = currency
+        self.image = image
+        self.permalink = permalink
+        self.quantity = quantity
+        self.condition = condition
+    }
+    
     enum CodingKeys: String, CodingKey {
         case title
         case price

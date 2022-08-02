@@ -7,32 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "09229699-42AE-48FB-81C5-56156FAF5DBE"
+            uuid = "A32F8547-C926-4014-9A46-45CD3538ADF4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MeliChallenge2022/Network/ProductService.swift"
+            filePath = "MeliChallenge2022Tests/MeliChallenge2022NetworkingTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "items(matching:completion:)"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "testGetProducts()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "571EC4AD-D484-49B6-B0DD-5941A9BB9E3C"
+            uuid = "E50CD49D-2222-4BC4-BA0D-E3EC65B37703"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MeliChallenge2022/Network/ProductService.swift"
+            filePath = "MeliChallenge2022Tests/MeliChallenge2022NetworkingTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "items(matching:completion:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testGetProducts()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -10,7 +10,7 @@ import UIKit
 extension UITableView {
     
     func setLoadingView() {
-        let spinner = UIActivityIndicatorView(style: .medium)
+        let spinner = UIActivityIndicatorView(style: .large)
         spinner.frame = self.frame
         spinner.translatesAutoresizingMaskIntoConstraints = false
         spinner.startAnimating()

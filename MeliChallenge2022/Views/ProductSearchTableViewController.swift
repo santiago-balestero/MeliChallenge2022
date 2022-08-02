@@ -10,39 +10,30 @@ import UIKit
 class ProductSearchTableViewController: UITableViewController {
     
     var service: ProductService?
-    
-    lazy var searchBarController: UISearchController? = {
+    lazy var searchBarController: UISearchController = {
        return UISearchController(searchResultsController: nil)
     }()
     
     var searchWorkItem: DispatchWorkItem?
     var isSearchBarEmpty: Bool {
-        return searchBarController?.searchBar.text?.isEmpty ?? true
+        return searchBarController.searchBar.text?.isEmpty ?? true
     }
     var products: [ProductModel] = []
     var selectedProduct: ProductModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBarController?.searchBar.delegate = self
-        searchBarController?.obscuresBackgroundDuringPresentation = false
-        searchBarController?.searchBar.placeholder = NSLocalizedString("searchBarPlaceholder", comment: "")
+        searchBarController.searchBar.delegate = self
+        searchBarController.obscuresBackgroundDuringPresentation = false
+        searchBarController.searchBar.placeholder = NSLocalizedString("searchBarPlaceholder", comment: "")
         navigationItem.searchController = searchBarController
         definesPresentationContext = true
-        
-        searchBarController?.searchBar.tintColor = .darkText
-        searchBarController?.searchBar.searchBarStyle = .prominent
-        // Hack to make background white
-        searchBarController?.searchBar.searchTextField.backgroundColor = .white
-        if let textfield = searchBarController?.searchBar.value(forKey: "searchField") as? UITextField {
-            if let backgroundview = textfield.subviews.first {
-                for view in backgroundview.subviews {
-                    view.removeFromSuperview()
-                }
-            }
-        }
+        searchBarController.searchBar.tintColor = .darkText
+        searchBarController.searchBar.searchBarStyle = .prominent
+        searchBarController.searchBar.accessibilityIdentifier = "searchBar"
+        makeSearchBarBackgroundColor(color: .white)
     }
-    
+        
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -140,4 +131,14 @@ extension ProductSearchTableViewController: UISearchBarDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
+    private func makeSearchBarBackgroundColor(color: UIColor) {
+        searchBarController.searchBar.searchTextField.backgroundColor = color
+        if let textfield = searchBarController.searchBar.value(forKey: "searchField") as? UITextField {
+            if let backgroundview = textfield.subviews.first {
+                for view in backgroundview.subviews {
+                    view.removeFromSuperview()
+                }
+            }
+        }
+    }
 }

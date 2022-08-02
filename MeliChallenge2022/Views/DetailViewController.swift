@@ -32,7 +32,6 @@ class DetailViewController: UIViewController {
     
     private func formattedTitle() -> String {
         return product?.title.components(separatedBy: "|")[0] ?? ""
-//        return title?[0] ?? ""
     }
         @IBAction func onViewOnWebButtonTouchUpInside(_ sender: Any) {
         if let link = URL(string: product?.permalink ?? "") {

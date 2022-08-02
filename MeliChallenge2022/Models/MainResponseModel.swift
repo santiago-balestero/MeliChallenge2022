@@ -20,6 +20,12 @@ struct MainResponseModel: Codable {
         self.results = try container.decode([ProductModel].self, forKey: .results)
     }
     
+    init(siteId: String, query: String, results: [ProductModel]) {
+        self.siteId = siteId
+        self.query = query
+        self.results = results
+    }
+    
     enum CodingKeys: String, CodingKey {
         case siteId = "site_id"
         case query
